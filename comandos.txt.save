@@ -1,0 +1,119 @@
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ pwd
+/Users/yeniree17/Desktop/20230605-JorgePena
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /Users/yeniree17/Desktop/20230605-JorgePena/.git/
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git remote add origin https://github.com/jhoantenis/20230605-JorgePena.git
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git branch -m main
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ touch comandos.txt / main.js / index.html
+touch: /: Read-only file system
+touch: /: Read-only file system
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos.txt
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git add .
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos.txt
+        new file:   index.html
+        new file:   main.js
+
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git commit -m "commit01 de JorgePena"
+[main (root-commit) 494cb30] commit01 de JorgePena
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 266 bytes | 66.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jhoantenis/20230605-JorgePena.git
+ * [new branch]      main -> main
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git branch feature
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git checkout feature
+Switched to branch 'feature'
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ mkdir Hardware / Software / SeguridadInformatica
+mkdir: /: Is a directory
+mkdir: /: Is a directory
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ touch Hardware/resumen.txt
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ touch Software/resumen.txt
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ touch SeguridadInformatica/resumen.txt
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git add .
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git commit -m "commit02 de JorgePena"
+[feature ccf4821] commit02 de JorgePena
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 403 bytes | 403.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/jhoantenis/20230605-JorgePena/pull/new/feature
+remote: 
+To https://github.com/jhoantenis/20230605-JorgePena.git
+ * [new branch]      feature -> feature
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git checkout main
+Switched to branch 'main'
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git mv main.js resumenHardware.txt
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git mv index.html resumenSoftware.txt
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git add resumenHardware.txt resumenSoftware.txt
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git commit -m "commit03 de JorgePena"
+[main b9ffcc8] commit03 de JorgePena
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename index.html => resumenHardware.txt (100%)
+ rename main.js => resumenSoftware.txt (100%)
+(base) Roslys-MacBook-Pro:20230605-JorgePena yeniree17$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 290 bytes | 290.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jhoantenis/20230605-JorgePena.git
+   494cb30..b9ffcc8  main -> maingit
+
